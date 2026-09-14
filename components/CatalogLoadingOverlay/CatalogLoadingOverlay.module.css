@@ -1,0 +1,72 @@
+.overlayWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  /* Прибираємо align-items: center, щоб sticky міг ковзати по всій висоті */
+  align-items: flex-start;
+
+  background-color: rgba(245, 245, 245, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+.overlay {
+  /* Робимо віконце липким у межах батьківського блоку */
+  position: sticky;
+  /* Фіксуємо його рівно посередині видимої області екрана */
+  top: calc(50vh - 144px); /* 144px — це половина висоти картки (288px / 2) */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  padding: 48px 96px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  height: 288px;
+  width: 534px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e4e9; /* трохи темніший сірий — все ще "приглушений", але помітний */
+  border-top-color: #00aad4; /* яскравий синій — чіткий контраст */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #101828;
+  text-align: center;
+  margin: 0;
+  max-width: 280px;
+  line-height: 1.25;
+}

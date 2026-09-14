@@ -1,0 +1,146 @@
+.filtersWrapper {
+  display: flex;
+  
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #8d929a;
+}
+
+/* Custom Select Dropdowns */
+.selectWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  height: 44px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  outline: none;
+  cursor: pointer;
+  min-width: 204px;
+}
+
+.chevron {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #101828;       
+  pointer-events: none; 
+  z-index: 5;           /
+}
+
+/* Mileage Inputs */
+.mileageContainer {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  height: 44px;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+.mileageInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  height: 100%;
+  width: 140px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #101828;
+}
+
+.mileageInput::placeholder {
+  color: #101828;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.mileageInput::-webkit-outer-spin-button,
+.mileageInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .mileageInput[type='number'] {
+  -moz-appearance: textfield;
+} */
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 26px; /* вирівнює кнопку в один рівень з полями введення */
+}
+
+.searchButton {
+  height: 44px;
+  padding: 12px 51px;
+  background-color: #00aad4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  line-height: 1.25;
+}
+
+.searchButton:hover,
+.searchButton:focus {
+  background-color: #0095ba;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #8a8a89;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.clearButton:hover {
+  color: #121417;
+  text-decoration: underline;
+}

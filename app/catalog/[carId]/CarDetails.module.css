@@ -1,0 +1,144 @@
+/* app/catalog/[carId]/CarDetails.module.css */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 640px;
+  flex-shrink: 0;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 512px;
+
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+  line-height: 1.33;
+text-align: center;
+
+}
+
+.articleId {
+  font-weight: 500;
+font-size: 16px;
+
+/* line-height: 20px; */ 
+line-height: 1.25;
+color: #8d929a;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  margin-bottom: 16px;
+  font-weight: 500;
+font-size: 16px;
+
+/* line-height: 20px; */ 
+line-height: 1.25;
+color: #101828;
+}
+
+.price {
+ font-weight: 600;
+font-size: 24px;
+
+/* line-height: 32px; */ 
+line-height: 1.33;
+color: #00aad4;
+  margin-bottom: 32px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 20px 0 10px;
+  padding-bottom: 10px;
+  border-bottom:  1px solid #dadde1;
+}
+
+.checklist,
+.specsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.checklist li,
+.specsList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 16px;
+  color: #101828;
+}
+
+.checkIcon {
+  color: #101828;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.specIcon {
+  color: #101828;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.icon {
+  color:#101828;
+}

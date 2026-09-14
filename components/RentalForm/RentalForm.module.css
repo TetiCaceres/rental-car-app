@@ -1,0 +1,144 @@
+.formWrapper {
+  max-width: 640px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #101828;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #8d929a;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 44px 14px 18px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #f7f7f8;
+  color: #101828;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #8d929a;
+  opacity: 1;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: #00a3c4;
+}
+
+.inputError {
+  background-color: #ffdfdf;
+  border-color: #ec383b;
+}
+
+.inputError:focus {
+  border-color: #ec383b;
+}
+
+.textarea {
+  resize: none;
+  min-height: 96px;
+}
+
+.errorIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ec383b;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.errorIconTextarea {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: #ec383b;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.errorText {
+  margin: 6px 0 0 4px;
+  font-size: 12px;
+  color: #ec383b;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 14px;
+  background-color: #00aad4;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #0095ba;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.notification {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}

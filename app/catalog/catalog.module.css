@@ -1,0 +1,37 @@
+.gridWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dimmed {
+  user-select: none;
+  pointer-events: none;
+  width: 100%;
+}
+
+.catalog {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.loadMore {
+  display: block;
+  margin: 40px auto 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+  border: 1px solid #00aad4;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 156px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.loadMore:hover,
+.loadMore:focus {
+  border: 1px solid #0095ba;
+}
