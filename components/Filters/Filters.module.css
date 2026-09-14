@@ -51,7 +51,7 @@
   transform: translateY(-50%);
   color: #101828;       
   pointer-events: none; 
-  z-index: 5;           /
+  z-index: 5;           
 }
 
 /* Mileage Inputs */
